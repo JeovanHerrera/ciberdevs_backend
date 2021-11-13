@@ -1,0 +1,6 @@
+Nombre: Luis Felipe Holguin Restrepo
+Ciudad: Marinilla Antioquia
+edad:27 años
+mi pelicula favorita: interstellar
+Profesión: Tecnico en sistemas
+Nueva Profesión: Desarrollo de sofware
