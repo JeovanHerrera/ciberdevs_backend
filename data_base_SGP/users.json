@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "619be24747a6b53021d4d172"
+  },
+  "user_name": "Samuel Niño quintero",
+  "cc": "1057546563",
+  "age": 30,
+  "gender": "male",
+  "profession": "electrician",
+  "email": "elier91@gmail.com",
+  "password": "super_Clav1",
+  "rol": "Adminsitrador",
+  "active": false,
+  "validation": true
+},{
+  "_id": {
+    "$oid": "619be24747a6b53021d4d173"
+  },
+  "user_name": "Aicardo Emmanuel Suárez Balaguera",
+  "cc": "1052313357",
+  "age": 31,
+  "gender": "male",
+  "profession": "electrician",
+  "email": "aiesuarezba@unal.edu.co",
+  "password": "super_Clav2",
+  "rol": "Adminsitrador",
+  "active": true,
+  "validation": true
+},{
+  "_id": {
+    "$oid": "619be24747a6b53021d4d174"
+  },
+  "user_name": "Diego Ferney Bayona Ruiz",
+  "cc": "1057574254",
+  "age": 31,
+  "gender": "male",
+  "profession": "student",
+  "email": "dievefe@gmail.com",
+  "password": "super_Clav3",
+  "rol": "Adminsitrador",
+  "active": true,
+  "validation": true
+},{
+  "_id": {
+    "$oid": "619be24747a6b53021d4d175"
+  },
+  "user_name": "Luis Felipe Holguin Restrepo",
+  "cc": "1038412828",
+  "age": 29,
+  "gender": "male",
+  "profession": "student",
+  "email": "holguinrestrepoluisfelipe@gmail.com",
+  "password": "super_Clav4",
+  "rol": "Adminsitrador",
+  "active": true,
+  "validation": true
+},{
+  "_id": {
+    "$oid": "619be24747a6b53021d4d176"
+  },
+  "user_name": "Jeovanis Herrera Pertuz",
+  "cc": "1065601585",
+  "age": 29,
+  "gender": "male",
+  "profession": "student",
+  "email": "jeovanis@outlook.com",
+  "password": "super_Clav5",
+  "rol": "Adminsitrador",
+  "active": true,
+  "validation": true
+}]
