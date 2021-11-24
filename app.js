@@ -1,9 +1,10 @@
 const { Console } = require('console')
 const { AutoEncryptionLoggerLevel } = require('mongodb')
 const mongoose = require('mongoose')
+require('dotenv').config();
+console.log(process.env)
 
-const url='mongodb://localhost/c4_project_ms'
-
+const url= process.env.mongo_uri
 mongoose.connect(url,{
     useNewUrlParser: true, 
     useUnifiedTopology: true 
@@ -40,7 +41,7 @@ const crear = async ()=>{
     const users = new UsersModel({
         user_name:  'Cosme Fulanita',
         cc: '0111111111',
-        age: 100,
+        age: 10,
         gender: 'female',
         profession: 'teacher',
         email: 'teacher_test@gmail.com',
@@ -56,7 +57,7 @@ const crear = async ()=>{
 }
 // llamamos los procedimientos 
 
-//crear()
+crear()
 
 //Editar
 
@@ -79,7 +80,7 @@ const actualizar =  async(id) =>{
     })
 }
 
-actualizar('619c10c3ed5ee8c565d30e77')
+actualizar('619d8470e8c349d1d7c8a79a')
 
 //Borrar
 
