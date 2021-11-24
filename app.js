@@ -2,7 +2,6 @@ const { Console } = require('console')
 const { AutoEncryptionLoggerLevel } = require('mongodb')
 const mongoose = require('mongoose')
 require('dotenv').config();
-console.log(process.env)
 
 const url= process.env.mongo_uri
 mongoose.connect(url,{
