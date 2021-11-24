@@ -4,12 +4,12 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "mongoose": "^6.0.13",
     "nodemon": "^2.0.15",
     "to": "^0.2.9",
     "update": "^0.7.4"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
