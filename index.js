@@ -48,6 +48,14 @@ mongoose
       deleteProject(
         _id: String!
       ): projectModel
+
+      editProject(
+        _id: String!
+        Nombre: String!
+        Objetivos_Generales: String!
+        Objetivos_Especificos: String!
+      ): projectModel
+
   }
 `; 
 
@@ -72,6 +80,22 @@ const resolvers = {
     deleteProject: async (parent, args) =>{
         const projectDeleted = await projectsManagement.findOneAndDelete({ _id: args._id });
         return projectDeleted;  
+    },
+
+    editProject: async (parent, args) =>{
+        const projectUpdated = new projectsManagement(
+            {
+              _id: args._id,
+              Nombre: args.Nombre,
+              Objetivos_Generales: args.Objetivos_Generales,
+              Objetivos_Especificos: args.Objetivos_Especificos,
+            },
+            {
+              collection: "Projects",
+            }
+          );
+        const projUpdated = await projectsManagement.findByIdAndUpdate(args._id, projectUpdated);
+        return projUpdated;    
     }
 
   },
