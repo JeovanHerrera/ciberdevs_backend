@@ -1,0 +1,7 @@
+{
+    "env": {
+      "MONGO_USER": "ciberdevsc4",
+      "MONGO_PASSWORD": "ciberdevsc4",
+      "MONGO_DB": "ciberdevsc4"
+    }
+  }
