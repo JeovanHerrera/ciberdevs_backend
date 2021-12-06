@@ -134,6 +134,31 @@ module.exports = {
   },
 
 
+  updateProject: async function ({ _id, project }) {
+    const projectx = await Project.findById(_id);
+    if (!projectx) {
+      throw new Error('Project Not found!');
+    }
+
+    projectx.id_project=project.id_project;    
+    projectx.name_project=project.name_project;
+    projectx.gen_target=project.gen_target;
+    projectx.spe_target=project.spe_target;
+    projectx.budget_project=project.budget_project;
+    projectx.date_startP=project.date_startP;
+    projectx.date_finishP=project.date_finishP;
+    projectx.id_user=project.id_user;
+    projectx.name_boss=project.name_boss;
+    projectx.status_project=project.status_project;
+    projectx.phase_project=project.phase_project;    
+    
+  const updatedProject= await projectx.save();
+    return {
+      ...updatedProject._doc,
+      _id: updatedProject._id.toString(),
+    };
+  },
+
 
 // Suscripciones al proyecto  ------------------------------------------------------------------------------------------------
 
@@ -183,6 +208,27 @@ module.exports = {
     };
   },
 
+  updateSubscription: async function ({ _id, subscription }) {
+    const subscriptionx = await Subscription.findById(_id);
+    if (!subscriptionx) {
+      throw new Error('Subscription Not found!');
+    }
+
+    subscriptionx.id_subscription=subscription.id_subscription;    
+    subscriptionx.id_project=subscription.id_project;
+    subscriptionx.id_user=subscription.id_user;
+    subscriptionx.status_subscription=subscription.status_subscription;
+    subscriptionx.date_in_subs=subscription.date_in_subs;
+    subscriptionx.date_out_subs=subscription.date_out_subs;  
+    
+  const updatedSubscription= await subscriptionx.save();
+    return {
+      ...updatedSubscription._doc,
+      _id: updatedSubscription._id.toString(),
+    };
+  },
+
+
 
   // Avances de proyectos  ------------------------------------------------------------------------------------------------
 
@@ -229,6 +275,28 @@ module.exports = {
       id: develop._id.toString(),
     };
   },
+
+  updateDevelop: async function ({ _id, develop }) {
+    const developx = await Develop.findById(_id);
+    if (!developx) {
+      throw new Error('Develop or Progress Not found!');
+    }
+
+    developx.id_develop=develop.id_develop;
+    developx.id_project=develop.id_project;
+    developx.date_develop=develop.date_develop;
+    developx.description_develop=develop.description_develop;
+    developx.comment_boss=develop.comment_boss;
+    
+  const updatedDevelop= await developx.save();
+    return {
+      ...updatedDevelop._doc,
+      _id: updatedDevelop._id.toString(),
+    };
+  },
+
+
+  
 
 // fin
 }

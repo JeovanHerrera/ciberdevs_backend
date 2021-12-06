@@ -100,7 +100,10 @@ module.exports = buildSchema(`
     deleteProject(_id: ID): Project
     deleteSubscription(_id: ID): Subscription
     deleteDevelop(_id: ID): Develop
-    updateUser(id: ID, user:UserInput): User
+    updateUser(_id: ID, user:UserInput): User
+    updateProject(_id: ID, project:ProjectInput): Project
+    updateSubscription(_id: ID, subscription:SubscriptionInput): Subscription
+    updateDevelop(_id: ID, develop:DevelopInput): Develop
   }
 
 
