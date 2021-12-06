@@ -1,0 +1,26 @@
+sino tiene instalado yarn tendrá que ejecutar el comando:
+	npm install --global yarn
+Verificar versión con 
+	yarn --version
+
+Instalar:
+	yarn add express
+	yarn add nodemon -D
+	yarn add graphql
+	yarn add mongoose
+	yarn add express-graphql
+
+Debemos modificar el script del package.json
+	"main": "app.js",
+	"scripts": {
+  		"start": "nodemon app.js"
+	},
+Crear la carpeta nodemon.json y si ya existe colocar:
+	{
+  		"env": {
+    			"MONGO_USER": "mongo_user",
+    			"MONGO_PASSWORD": "mongo_password",
+    			"MONGO_DB": "db_name"
+  			}
+	}
+En este último script colocar los datos de la base de datos, usurio, contraseña y nombre de la base de datos
