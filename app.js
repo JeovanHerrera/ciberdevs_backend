@@ -19,7 +19,8 @@ app.use(
 )
 // Este es el uri para la conexion a MongoDB se trae desde Mongo Atlas
 // Usamos process.env para obtener los valores desde Nodemon
-const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.pypi6.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`
+//const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.pypi6.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`
+const uri = `mongodb+srv://ciberdevsc4:ciberdevsc4@cluster0.pypi6.mongodb.net/ciberdevsc4?retryWrites=true&w=majority`
 // Declaramos las opciones para mongoose
 const options = { useNewUrlParser: true, useUnifiedTopology: true }
 

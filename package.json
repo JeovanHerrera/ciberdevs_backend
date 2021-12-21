@@ -12,13 +12,10 @@
     "express-graphql": "^0.12.0",
     "graphql": "^16.0.1",
     "mongoose": "^6.0.14",
-    "node": "^16.13.0"
+    "node": "^16.13.0",
+    "nodemon": "^2.0.15"
   },
   "scripts": {
-    "start": "nodemon app",
-    "dev": "nodemon app"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
+    "start": "node app"
   }
 }
